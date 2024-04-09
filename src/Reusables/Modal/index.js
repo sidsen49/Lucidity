@@ -21,7 +21,7 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal() {
+export default function EditModal() {
 
   const dispatch = useDispatch();
   const productData = useSelector(state => state.dataReducer.data);
@@ -39,7 +39,7 @@ export default function BasicModal() {
   const value = () => {
     const dollarSign = selectedProduct.value && selectedProduct.value.slice(0, 1) === '$';
     if(dollarSign) {
-      return selectedProduct.value.slice(1, selectedProduct.price.length)
+      return selectedProduct.value.slice(1, selectedProduct.value.length)
     }
     return selectedProduct.value || 0;
   }

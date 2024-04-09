@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from './NavBar';
 import InventoryStats from './InventoryStats';
 import ProductList from './ProductList';
-import Modal from './Reusables/Modal';
+import EditModal from './Reusables/Modal';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
     <NavBar />
     <InventoryStats />
     <ProductList />
-    <Modal />
+    <EditModal />
     </>
   );
 }
