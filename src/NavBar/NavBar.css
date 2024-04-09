@@ -1,0 +1,14 @@
+.toolBarStyle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: right;
+  align-items: center;  
+}
+
+.appBarStyle {
+  background-color: black;
+}
+
+.navBarText {
+  color: white
+}
