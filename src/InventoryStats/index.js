@@ -37,7 +37,7 @@ const InventoryStats = () => {
 
   // counts of stock item
   const outOfStock = useSelector(state => 
-    (state.dataReducer.data.filter((data) => data.quantity === 0)).length
+    (state.dataReducer.data.filter((data) => data.quantity == 0)).length
   )
   
   // counts no of different category.
