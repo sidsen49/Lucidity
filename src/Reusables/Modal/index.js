@@ -46,7 +46,7 @@ export default function EditModal() {
   // This Function is update selected product entry.
   const updateField = (data, name) => {
     const newSelectedProduct = {...selectedProduct};
-    if (name === 'price' || name === 'value') (newSelectedProduct[name] = `$${data}`)
+    if (name === 'price' || name === 'value') (newSelectedProduct[name] = `$${data || 0}`)
     else (newSelectedProduct[name] = data);
     dispatch(editAction(newSelectedProduct));
   }
